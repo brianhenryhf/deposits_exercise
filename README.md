@@ -1,6 +1,6 @@
 # Deposits Exercise
 
-A tradeline on a credit report represents an account, such as a specific credit card.
+A tradeline on a credit report represents an account, such as a credit card or car loan.
 
 In the codebase, the following exists:
 
@@ -13,8 +13,8 @@ Add in the ability to create deposits for a specific tradeline using a JSON API 
 In addition:
 
 * A deposit should not be able to be created that exceeds the outstanding balance of a tradeline.
-* You should return validation errors if a deposit can not be created.
-* Expose endpoints for seeing all deposit for a given tradeline, as well as seeing an individual deposit.
+* You should return validation errors if a deposit cannot be created.
+* Expose endpoints for seeing all deposits for a given tradeline, as well as seeing an individual deposit.
 
 Feel free to add any gems to the `Gemfile`, and touch any of the existing code. For example, if you prefer to use PostgreSQL or MySQL over the included SQLite, or a serializer of your choice, please go ahead. This is not required, but you can be as creative as you want.
 
