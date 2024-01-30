@@ -6,7 +6,8 @@ class TradelinesController < ApplicationController
   end
 
   def show
-    render json: Tradeline.find(params[:id])
+    @tradeline = Tradeline.find(params[:id])
+    render :show
   end
 
   private
