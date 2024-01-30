@@ -22,7 +22,7 @@ class DepositsController < ApplicationController
   end
 
   def not_found
-    render json: 'not_found', status: :not_found
+    head :not_found
   end
 
   def deposits_params

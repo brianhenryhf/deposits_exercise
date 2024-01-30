@@ -12,6 +12,6 @@ class TradelinesController < ApplicationController
   private
 
   def not_found
-    render json: 'not_found', status: :not_found
+    head :not_found
   end
 end
