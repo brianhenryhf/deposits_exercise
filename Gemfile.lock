@@ -140,6 +140,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
+    pg (1.5.4)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -208,9 +209,6 @@ GEM
       rspec-support (~> 3.12)
     rspec-support (3.12.1)
     ruby2_keywords (0.0.5)
-    sqlite3 (1.6.8-aarch64-linux)
-    sqlite3 (1.6.8-arm64-darwin)
-    sqlite3 (1.6.8-x86_64-linux)
     stringio (3.0.9)
     thor (1.3.0)
     timeout (0.4.1)
@@ -233,11 +231,11 @@ DEPENDENCIES
   debug
   factory_bot_rails
   jbuilder
+  pg (~> 1.5.4)
   pry
   puma (>= 5.0)
   rails (~> 7.1.2)
   rspec-rails
-  sqlite3 (~> 1.4)
   tzinfo-data
 
 RUBY VERSION
