@@ -8,7 +8,7 @@ In the codebase, the following exists:
 * A `Tradeline` controller, which serves both the `index` and `show` routes for tradelines.
 * Basic `rspec` tests on the controller with a `tradeline` FactoryBot.
 
-Add in the ability to create deposits for a specific tradeline using a JSON API call. You should store the deposit date, and amount. Expose the outstanding balance for a given tradeline in the JSON output for `TradelinesController#show`, and `TradelinesController#index`. The oustanding balance should be calculated as the `amount` minus all of the deposit amounts.
+Add in the ability to create deposits for a specific tradeline using a JSON API call. You should store the deposit date, and amount. Expose the outstanding balance for a given tradeline in the JSON output for `TradelinesController#show`, and `TradelinesController#index`. The outstanding balance should be calculated as the `amount` minus all of the deposit amounts.
 
 In addition:
 
