@@ -25,7 +25,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_30_021535) do
 
   create_table "tradelines", force: :cascade do |t|
     t.string "name", null: false
-    t.decimal "amount", precision: 8, scale: 2
+    t.decimal "amount", precision: 8, scale: 2, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
