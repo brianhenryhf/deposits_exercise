@@ -12,7 +12,10 @@ class DepositsController < ApplicationController
 
   # 2018-01-09 is AR-accepted format for dates
   def create
-    @tradeline.deposits << Deposit.new(deposits_params)
+    deposit = @tradeline.deposits.build(deposits_params)
+    unless deposit.save
+      render json: {errors: [deposit.errors]}, status: :unprocessable_entity
+    end
   end
 
   private
